@@ -23,7 +23,7 @@ A WordPress plugin to display musical content (musical scores, guitar tabs, etc/
 
 ## Issues and Support
 
-If there are any issues using this plugin or any suggestions for improvements, please open a ticket [here](LINK_TO_GITHUB_ISSUES)
+If there are any issues using this plugin or any suggestions for improvements, please open a ticket [here](https://github.com/fuhton/wp-display-music/issues)
 
 
 

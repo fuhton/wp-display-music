@@ -32,27 +32,3 @@ function init() {  require_once DIS_MUS_INC . 'enqueue.php';
 
   do_action( 'dis_mus_init' );
 }
-
-/**
- * Activate the plugin
- *
- * @uses init()
- * @uses flush_rewrite_rules()
- *
- * @return void
- */
-function activate() {
-  // First load the init scripts in case any rewrite functionality is being loaded
-  init();
-}
-
-/**
- * Deactivate the plugin
- *
- * Uninstall routines should be in uninstall.php
- *
- * @return void
- */
-function deactivate() {
-
-}

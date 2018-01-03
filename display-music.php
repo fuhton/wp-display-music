@@ -39,9 +39,5 @@ define( 'DIS_MUS_TEMPLATES', DIS_MUS_PATH . 'templates/' );
 // Include files
 require_once DIS_MUS_INC . 'setup.php';
 
-// Activation/Deactivation
-register_activation_hook( __FILE__, '\Dis_Mus\Core\activate' );
-register_deactivation_hook( __FILE__, '\Dis_Mus\Core\deactivate' );
-
 // Bootstrap
 Dis_Mus\Setup\setup();

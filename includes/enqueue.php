@@ -9,6 +9,7 @@ namespace Dis_Mus\Enqueue;
  * @return void
  */
 function setup() {
+  add_action( 'admin_enqueue_scripts', __NAMESPACE__ . '\load_frontend_scripts' );
   add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\load_frontend_scripts' );
 }
 

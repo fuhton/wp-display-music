@@ -32,10 +32,20 @@
                 }
               ],
               onsubmit: function( e ) {
-                var vexFieldValue = e.data.vexFieldValue;
-                vexFieldValue = vexFieldValue.replace(/(?:\r\n|\r|\n)/g, '\\n');
-                if ( vexFieldValue.length ) {
+                vextab = new window.VexTabDiv.VexTab(
+                  new window.VexTabDiv.Artist(10, 10, 600, {scale: 0.8})
+                );
+
+                try {
+                  var vexFieldValue = e.data.vexFieldValue;
+                  // parse to confirm it's valid content
+                  vextab.parse(vexFieldValue);
+                  vexFieldValue = vexFieldValue.replace(/(?:\r\n|\r|\n)/g, '\\n');
                   editor.insertContent('[display-music vextab="' + vexFieldValue + '"]');
+                } catch (e) {
+                  console.log(e);
+                  window.alert(e.message);
+                  throw Error(e.message);
                 }
               }
             });

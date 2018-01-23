@@ -18,7 +18,7 @@ A WordPress plugin to display musical content (musical scores, guitar tabs, etc/
 4. Select your desired notation (assumed VexTab)
 5. Paste `tabstave notation=true\n notes :q 4/4\n` into the TinyMCE dialoge
 6. Save and view your post! There should be some music there!
-   * If you run into issues, please review our (Issues and Support)[#issues-and-support] section
+   * If you run into issues, please review our [Issues and Support](#issues-and-support) section
 
 
 ## Issues and Support
